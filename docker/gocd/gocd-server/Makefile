@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 WORKING_DIR := $(shell pwd)
 
-DOCKER_REGISTRY = hub.docker.com
+DOCKER_REGISTRY = docker.io
 IMAGE_NAME = gocd-server
 IMAGE_VERSION = latest
 ORG_NAME = ramz

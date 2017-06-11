@@ -1,8 +1,4 @@
-# Build stable release using: docker build --build-arg GO_VERSION=16.0-xxxx -t gocd-server .
-# Build experimental release using: docker build --build-arg GO_VERSION=16.0-xxxx  --build-arg DOWNLOAD_URL=https://download.gocd.io/experimental/binaries -t gocd-server .
-
 FROM phusion/baseimage:0.9.20
-MAINTAINER DevLabs <DAU-DEVLABS@iag.com.au>
 
 ARG GO_VERSION="17.4.0-4892"
 ARG DOWNLOAD_URL="https://download.gocd.io/binaries"
