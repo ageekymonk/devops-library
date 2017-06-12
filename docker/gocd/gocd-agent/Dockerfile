@@ -63,7 +63,7 @@ RUN curl -k https://binaries.rightscale.com/rsbin/rsc/v6/rsc-linux-amd64.tgz | t
     curl -sSL https://get.rvm.io | bash -s stable --ruby && /bin/bash -c "source /usr/local/rvm/scripts/rvm &&                                                   \
     gem install bigdecimal bson bson_ext json mime-types minitest netrc rake rdoc rest-client rubygame" &&                                                       \
     echo "source /usr/local/rvm/scripts/rvm" >> /var/go/.bashrc
- l5
+
 ## Need this to fix issues with mktemp ## and clean apt cache
 RUN chmod -R 777 /tmp && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
