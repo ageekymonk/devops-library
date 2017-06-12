@@ -1,11 +1,10 @@
 FROM phusion/baseimage:0.9.20
-MAINTAINER DevLabs <DAU-DEVLABS@iag.com.au>
 
 ARG GO_VERSION="17.2.0-4587"
 ARG DOWNLOAD_URL="https://download.gocd.io/binaries"
 
 # Add proxy settings for apt
-ADD $DOWNLOAD_URL/$GO_VERSION/deb/go-agent_${GO_VERSION}_all.deb /tmp/go-agent.deb
+ADD https://download.gocd.io/binaries/17.2.0-4587/deb/go-agent_17.2.0-4587_all.deb /tmp/go-agent.deb
 
 WORKDIR /tmp
 RUN update-ca-certificates && mkdir /etc/service/go-agent
