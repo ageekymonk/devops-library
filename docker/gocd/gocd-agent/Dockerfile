@@ -4,7 +4,7 @@ ARG GO_VERSION="17.2.0-4587"
 ARG DOWNLOAD_URL="https://download.gocd.io/binaries"
 
 # Add proxy settings for apt
-ADD https://download.gocd.io/binaries/17.2.0-4587/deb/go-agent_17.2.0-4587_all.deb /tmp/go-agent.deb
+ADD https://download.gocd.io/binaries/17.4.0-4892/deb/go-agent_17.4.0-4892_all.deb /tmp/go-agent.deb
 
 WORKDIR /tmp
 RUN update-ca-certificates && mkdir /etc/service/go-agent
